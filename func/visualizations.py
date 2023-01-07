@@ -51,10 +51,6 @@ def vis5(communities, count,G_new,G, heroA = 'CAPTAIN AMERICA', heroB = 'IRON MA
             
     table = pd.DataFrame(dict([(k,pd.Series(v)) for k,v in mydict.items() ]))
     
-    '''if len(table[table['red']==u])== len(table[table['red']==v]):
-        print(f'The two heroes, {u} and {v}, are on the same community.\n')
-    else:
-        print(f'The two heroes, {u} and {v}, are not on the same community.\n')'''
     
     print('\n',table,'\n')
     
