@@ -13,6 +13,11 @@ cut -d, -f1,2 hero-network.csv | sort | uniq -c | sort -nr | head -n 1
 echo " "
 echo 'The number of comics per hero is:'
 cut -d, -f1 edges.csv | sort | uniq -c | sort -nr
+#The number of comics per hero is:
+#1577 SPIDER-MAN/PETER PARKER
+#1334 CAPTAIN AMERICA
+#1150 IRON MAN/TONY STARK
+#...
 
 #3. Average comics per hero:
 
