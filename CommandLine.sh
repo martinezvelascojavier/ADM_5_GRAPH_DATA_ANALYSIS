@@ -5,7 +5,7 @@
 
 #1. Most popular pair of heroes
 
-echo 'The most popular pair of hereos is:'
+echo 'The most popular pair of heroes is:'
 cut -d, -f1,2 hero-network-preprocessed.csv | sort | uniq -c | sort -nr | head -n 1
 
 # ANSWER: The most popular pair of heros is:
