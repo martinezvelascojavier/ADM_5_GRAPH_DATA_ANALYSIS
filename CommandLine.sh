@@ -15,6 +15,12 @@ echo 'The number of comics per hero is:'
 cut -d, -f1 edges.csv | sort | uniq -c | sort -nr
 
 #3. Average comics per hero:
-echo " "
+
 echo 'The average number of heroes per comic is:'
-awk -F"," -v OFMT='%.2f' '{a[$2]+=1}END{for(i in a) print i,a[i]}' edges.csv | sort -n
+cut -d, -f2 edges_df2.csv | sort | uniq -c | sort -nr > comics_per_hero.csv
+awk '{ total += $1 } END { print total/NR }' comics_per_hero.csv
+#The average number of heroes per comic is:
+#7.59663
+#edges_df2 is a exact copy of edges.csv, but commas have been replaced with "", 
+#because they were causing problems when computing the mean, as the csv file 
+#interprete wrong commas within heros names.
