@@ -4,7 +4,7 @@
 
 `Name`: Giulia Iadisernia `Matricola`: 2065450 `Email`: iadisernia.2065450@studenti.uniroma1.it <br>
 `Name`: Davide Vigneri `Matricola`: 2058036 `Email`: vigneri.2058036@studenti.uniroma1.it  <br>
-`Name`: `Matricola`: `Email`:  <br>
+`Name`: Javier Martinez Velasco `Matricola`: 2058968 `Email`: martinezvelasco.2058968@studenti.uniroma1.it <br>
 
 `INTRODUCTION`:
 
