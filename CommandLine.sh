@@ -5,7 +5,7 @@
 
 #1. Most popular pair of heroes
 
-echo 'The most popular pair of heros is:'
+echo 'The most popular pair of hereos is:'
 cut -d, -f1,2 hero-network-preprocessed.csv | sort | uniq -c | sort -nr | head -n 1
 
 #ANSWER: The most popular pair of heros is:
@@ -29,6 +29,5 @@ echo 'The average number of heroes per comic is:'
 cut -d, -f2 edges_preprocessed.csv | sort | uniq -c | sort -nr > comics_per_hero.csv
 awk '{ total += $1 } END { print total/NR }' comics_per_hero.csv
 
-##ANSWER: The average number of heroes per comic is:
+# ANSWER: The average number of heroes per comic is:
 #7.59663
-
